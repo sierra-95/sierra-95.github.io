@@ -1,19 +1,40 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>Projects</title>
-  <meta name="description" content="Description of the projects page less than 150 characters">
-  <link rel="icon" type="image/png" href="images/favicon.jpg">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:700&display=swap" rel="stylesheet">
-  <link rel='stylesheet' href='#'> <!-- Include additional styles if needed -->
-  <link rel="stylesheet" href="styles/style.css"> <!-- Link to your main style file -->
-</head>
-<body>
-  <!-- Header -->
-  <header class="header" data-section-theme="dark">
-    <div class="container">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Homepage</title>
+    <meta name="description" content="Description of the page less than 150 characters">
+    <link rel="icon" type="image/png" href="images/favicon.jpg">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:700&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='styles/curtain.css'>
+    <link rel="stylesheet" href="styles/style.css">
+  </head>
+  <body>
+    <div class="curtain left-curtain">
+      <h1 class="slide-in-out">
+        <span style="color:#ffffff; font-size:7rem;"class="section-title">Michael</span>
+      </h1>
+    </div> 
+    <div class="curtain right-curtain">
+      <h1 class="slide-in-out">
+        <span style="color:#090909;font-size:7rem"class="section-title">Ma</span>
+        <span style="color:#ffffff;font-size:7rem"class="section-title">cho</span>
+        <span style="color:#090909;font-size:7rem"class="section-title">hi</span>
+      </h1> 
+      <h1 class="slide-in-out">
+        <span style="color:#090909;font-size:7rem"class=" section-title">m</span>
+        <span style="color:#ffffff;font-size:7rem"class=" section-title">y</span>
+      </h1>
+      <h1 class="slide-in-out">
+        <span style="color:#ffffff;font-size:7rem"class=" section-title">Port</span>
+        <span style="color:#090909;font-size:7rem"class=" section-title">folio</span>
+      </h1>     
+    </div>
+    <script src="js/curtain.js"></script> 
+    <!-- Header -->
+    <header class="header" data-section-theme="dark">
+      <div class="container">
         <div class="header-logo">
           <a href="#">
             <img src="images/Logo-white-1.png" alt="Techium logo" width="170" height="114">
@@ -21,9 +42,6 @@
         </div>
         <nav class="navbar-menu">
           <ul class="nav">
-            <li class="nav-item">
-                <a href="index.html" class="nav-link">Home</a>
-            </li>
             <li class="nav-item">
                 <a href="about.html" class="nav-link">About</a>
             </li>
@@ -34,85 +52,51 @@
               <a href="quotes.html" class="nav-link">Quote of the day</a>
             </li>
             <li class="nav-item">
-              <a href="mailto:michaelmachohi@gmail.com" class="nav-link">Contact</a>
+              <a href="#contact" class="nav-link">Contact</a>
             </li>
           </ul>
         </nav>
       </div>
-  </header>
-
-  <!-- Main -->
-  <main>
-    <h1 class="visually-hidden">Projects</h1>
-    <section class="section-hero" data-section-theme="dark">
+    </header>
+    <!-- Main -->
+    <main>
+      <h1 class="visually-hidden">Homepage</h1>
+      <!-- Hero section -->
+      <section class="section-hero" data-section-theme="dark">
         <div class="container">
           <div class="section-body">
             <section class="section-inner">
             
-              <p class="fadeInElement" style="color:#ffffff">Engineering is the art of directing the great sources of power in nature for the use and convenience of humankind</p>
+              <h2 class="section-title fadeInElement">Hi, i'm Michael Machohi</h2>
+              <h2 style="color:#ffffff"; class="fadeInElement">I am a mechatronic and software engineer, Combining the best of both worlds!</h2>
             </section>
           </div>
         </div>
-      </section>
-    <!-- Projects section -->
-    <section id="projects" class="section" data-section-theme="dark">
-      <div class="container">
-        <header class="section-header">
-          <h2 style="color:#ffffff"; class="slide-in section-title">Projects</h2>
-          <p class="section-tagline">Check out some of my projects</p>
-        </header>
-        <div class="section-body">
-            <ul class="row">
-                <li class="col-1-3">
-                  <article class="card-work">
-                    <div class="card-outer">
-                      <div class="card-image">
-                        <img src="images/sensor-logger.jpeg" alt="">
-                      </div>
-                      <div class="card-inner">
-                        <h3 class="card-title"><a style="color:white"; href="https://sierra-95.github.io/">The sensor Logger</a></h3>
-                      </div>
-                    </div>
-                  </article>
-                </li>
-                <li class="col-1-3">
-                  <article class="card-work">
-                    <div class="card-outer">
-                      <div class="card-image">
-                        <img src="images/Motor control.jpg" alt="">
-                      </div>
-                      <div class="card-inner">
-                        <h3  class="card-title"><a style="color:white";href="#">PCB motor control</a></h3>
-                      </div>
-                    </div>
-                  </article>
-                </li>
-                <li class="col-1-3">
-                  <article class="card-work">
-                    <div class="card-outer">
-                      <div class="card-image">
-                        <img src="images/comingsoon.jpeg" alt="">
-                      </div>
-                      <div class="card-inner">
-                        <h3 class="card-title"><a style="color:white"; href="#">Coming soon</a></h3>
-                      </div>
-                    </div>
-                  </article>
-                </li>
-              </ul>
+      </section>      
+      <!-- Contact section -->
+      <section id="contact" class="section">
+        <div class="container">
+          <header class="section-header">
+            <h2 style="color:white"; class="section-title">Let's connect</h2>
+            <p class="section-tagline">I'd love to hear from you!</p>
+          </header>
+          <div class="section-body">
+            <p style="text-align: center;";>Great things in business are never done by one person. They're done by a team of people.</p>
+          </div>
+          <div class="section-footer">
+            <a href="mailto:michaelmachohi@gmail.com" class="button bounce">Get in touch</a>
+          </div>
         </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- Footer -->
-  <footer class="footer" data-section-theme="dark">
-    <div  class="container">
+      </section>
+            </main>
+    <!-- Footer -->
+    <footer class="footer" data-section-theme="dark">
+      <div  class="container">
         <div class="row">
           <div class="col-1-2">
             <!--img src="images/Logo-white-1.png" alt="Techium logo" width="150" height="94"-->
             <address class="footer-address">
-                Nairobi, Kenya<br>
+              Nairobi, Kenya<br>
             </address>
           </div>
           <div class="col-1-2">
@@ -180,6 +164,6 @@
           </div>
         </div>
       </div>
-  </footer>
-</body>
+    </footer>
+  </body>
 </html>
