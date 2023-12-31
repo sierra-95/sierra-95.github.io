@@ -531,6 +531,7 @@ ul.row {
 
   .card-work .card-title {
     height: auto;
+    width:100%;
   }
 
   .footer {
