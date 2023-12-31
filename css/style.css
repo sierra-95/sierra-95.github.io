@@ -551,9 +551,19 @@ ul.row {
     margin-bottom: 20px; /* Add some space between image and text */
   }
   .col-1-2 img {
-    width: 80%; /* Adjust image width for smaller screens */
+    width: 80%;
+    height:80%; /* Adjust image width for smaller screens */
     display: block; /* Ensure the image takes the full width */
     margin: 0 auto; /* Center the image */
+  }
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .col-1-3 {
+    width: 100%;
+    padding: 0.5rem; /* Adjust padding as needed */
   }
 }
 
