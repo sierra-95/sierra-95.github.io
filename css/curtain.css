@@ -31,21 +31,24 @@
   .slide-in-out {
     animation: slide-in-out-Animation 7s ease-in-out forwards;
   }
-
 @media only screen and (max-width: 768px) {
-
   .curtain {
-    width: 100%;
+    width: 100%; /* Adjust the curtain width to occupy the entire screen */
+    height: 50vh; /* Reduce the height to take up half the viewport height */
+    /* Modify the background colors or gradients for better contrast */
+    /* For instance, change the background-color properties */
+    background-color: rgb(38, 106, 106);
   }
 
   .section-title {
-    font-size: 3rem; 
-  }
-  .slide-in-out {
-    animation-duration: 5s;
+    font-size: 2.5rem; /* Decrease the font size for better readability on smaller screens */
   }
 
+  .slide-in-out {
+    animation-duration: 5s; /* Adjust animation duration for a better experience */
+  }
 }
+
 
 
   
