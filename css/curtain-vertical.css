@@ -5,6 +5,7 @@
   --font-weight-bold: 700;
   --section-title-margin: 0;
   --section-title-color: var(--color-black);
+  --foreground-color:#ffffff;
 }
 .section-title2 {
   font-family: var(--font-family-title);
@@ -16,7 +17,19 @@
 body, html {
     height: 100%;
     margin: 0;
+    background-color: var(--color-black);
   }
+  .section{
+    border:2px;
+    padding:20px;
+    margin:0px;
+    box-sizing: border-box;
+    background-color:black;
+    color: var(--foreground-color);
+    text-align: center;
+    width:100%;
+    font-family: var(--font-family-global);
+}
   
   .curtain {
     position: relative;
