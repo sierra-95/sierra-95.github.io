@@ -1,0 +1,33 @@
+:root{
+    --primary-color:#090909;
+    --secondary-color:rgb(38, 106, 106);;
+    --foreground-color:#ffffff;
+    --font-family-global:Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+    --font-family-explanation:none;
+}
+.section{
+    box-sizing:border-box;
+    margin:0px;
+    padding:20px;
+    background-color:var(--primary-color);
+    color: var(--foreground-color);
+    border-radius:20px;
+    width:100%;
+    margin-left:20px;
+    font-family: var(--font-family-global);   
+}
+.test{
+    display:flex;
+}
+h3 {
+    color: var(--secondary-color);
+}
+p{
+    font-size: auto;
+    font-family: sans-serif;
+}
+
+.img1{
+    border:2px solid var(--secondary-color);
+    border-radius:20px;
+}

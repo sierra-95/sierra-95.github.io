@@ -437,6 +437,10 @@ ul.row {
   max-width: 100%;
   height: auto;
 }
+.img1{
+  border:2px solid var(--color-primary);
+  border-radius:20px;
+}
 
 
 @keyframes fadeIn {
@@ -571,5 +575,10 @@ ul.row {
     width: 100%;
     padding: 0.5rem; /* Adjust padding as needed */
   }
+  .img1 {
+    border-width: 1px; /* Reduce border width for smaller screens */
+    border-radius: 10px; 
+
+}
 }
 
