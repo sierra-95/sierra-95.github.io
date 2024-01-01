@@ -24,10 +24,12 @@
     border:2px solid var(--secondary-color);
     padding:10px;
     border-radius: 5px;
+    text-decoration: none;
 }
 .button:hover {
     opacity:90%;
     background-color: var(--secondary-color);
+    text-decoration: none;
 }
 .img1, .img2{
     height:100px;
