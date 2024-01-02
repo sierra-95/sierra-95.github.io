@@ -5,6 +5,9 @@
     --font-family-global:Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
     --font-family-explanation:none;
 }
+html{
+    background-color: var(--primary-color);
+}
 
 .section{
     border:2px;
@@ -31,12 +34,39 @@
     background-color: var(--secondary-color);
     text-decoration: none;
 }
+.button2{
+    border:2px;
+    padding:10px;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: var(--secondary-color);
+}
+.button2:hover {
+    opacity:50%;
+    text-decoration: none;
+}
 .img1, .img2{
     height:100px;
     width:100px;
     margin:10px;
     border: 2px;
     border-radius: 10px;
+}
+.article{
+    border:2px;
+    border-radius: 5px;
+    padding:20px;
+    margin:0px;
+    box-sizing: border-box;
+    background-color:black;
+    color: var(--foreground-color);
+    text-align: center;
+    width:100%;
+    font-family: var(--font-family-global);
+}
+.img3{
+    width:500px;
+    height:auto;
 }
 #Explanation{
     font-family: var(--font-family-explanation);
