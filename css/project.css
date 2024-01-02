@@ -77,6 +77,13 @@ html{
         width: 80%; 
         margin-left: auto; 
         margin-right: auto;
+        margin-bottom: 20px;
+    }
+    .img3 {
+        width: 80%; 
+        height: auto;
+        margin-left: auto; 
+        margin-right: auto;
     }
    
 }
@@ -93,5 +100,17 @@ html{
     }
     .button {
         padding: 8px;
+    }
+    .img3 {
+        width: 100%; 
+        height: auto; 
+    }
+    .button2 {
+        padding: 8px;
+        font-size: 14px; 
+    }
+    .article {
+        padding: 10px;
+        margin: 10px 0; 
     }
 }
