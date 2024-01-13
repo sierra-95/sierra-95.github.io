@@ -26,6 +26,7 @@
 @media only screen and (max-width: 768px) {
     .section {
       width: auto;
+      margin:20px;
     }
   
     .img3 {
@@ -37,6 +38,7 @@
 @media only screen and (max-width: 480px) {
     .section {
       width: auto;
+      margin:20px;
     }
   
     .img3 {
