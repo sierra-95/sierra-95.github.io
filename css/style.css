@@ -546,10 +546,6 @@ ul.row {
     width:100%;
   }
 
-  .footer {
-    padding: 3rem 0;
-  }
-
   .card-services a {
     padding: 1.5rem;
   }
@@ -557,16 +553,19 @@ ul.row {
   .section-hero .section-title {
     margin-bottom: 3rem;
   }
+  .footer {
+    padding: 3rem 0;
+  }
   .col-1-2 {
     width: 100%;
-    text-align: center; /* Center the text on smaller screens */
-    margin-bottom: 20px; /* Add some space between image and text */
+    text-align: center; 
+    margin-bottom: 20px; 
   }
   .col-1-2 img {
     width: 80%;
-    height:80%; /* Adjust image width for smaller screens */
-    display: block; /* Ensure the image takes the full width */
-    margin: 0 auto; /* Center the image */
+    height:80%;
+    display: block; 
+    margin: 0 auto;
   }
   .row {
     display: flex;
