@@ -37,36 +37,21 @@ h2{
 .display{
     display:flex;
 }
-.button2{
-    border:2px;
-    padding:10px;
-    border-radius: 5px;
-    text-decoration: none;
-    margin-top: 100px;
-}
-.button2:hover {
-    opacity:50%;
-    text-decoration: none;
-}
 
-/* Tablet */
+
 @media screen and (max-width: 768px) {
-    .display {
-        flex-direction: column; 
-    }
-    .img3 {
-        width: 100%; 
-        height: auto;
+    .section {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
-/* Mobile */
+/* Styles for screens up to 480px */
 @media screen and (max-width: 480px) {
-    .display {
-        flex-direction: column; 
-    }
-    .img3 {
-        width: 100%; 
-        height: auto;
+    .section {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
