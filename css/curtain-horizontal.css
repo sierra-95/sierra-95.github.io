@@ -74,7 +74,8 @@
   top: 0;
   width: 50%;
   height: 100vh;
-  background-color: rgb(38, 106, 106);
+  /*background-color: rgb(38, 106, 106);*/
+  background-color: #090909;
   z-index: 9999;
   transition: width 2s ease;
   overflow: hidden; /* Hides the overflowing dots */
