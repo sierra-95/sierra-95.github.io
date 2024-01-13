@@ -23,26 +23,27 @@
     border: 2px;
     border-radius: 10px;
 }
-@media screen and (max-width: 768px) {
-    .display {
-        flex-direction: column; 
+@media only screen and (max-width: 768px) {
+    .section {
+      width: 100%;
+      margin: 20px;
     }
+  
     .img3 {
-        width: 100%; 
-        height: auto;
+      width: 200px;
+      height: auto;
     }
-    .nav .nav-link{
-        background-color: var(--secondary-color);
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .section {
+      width: 100%;
+      margin: 20px;
     }
-}
-
-/* Mobile */
-@media screen and (max-width: 480px) {
-    .display {
-        flex-direction: column; 
-    }
+  
     .img3 {
-        width: 100%; 
-        height: auto;
+      width: 150px;
+      height: auto;
     }
-}
+  }
+  
