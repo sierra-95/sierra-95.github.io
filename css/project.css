@@ -74,7 +74,7 @@ html{
 
 @media screen and (max-width: 768px) {
     .section {
-        width: 80%; 
+        width: auto; 
         margin-left: auto; 
         margin-right: auto;
         margin-bottom: 20px;
@@ -90,7 +90,7 @@ html{
 
 @media screen and (max-width: 480px) {
     .section {
-        width: 100%; 
+        width: auto; 
         margin-left: 10px;
         margin-right: 10px;
     }
