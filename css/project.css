@@ -72,35 +72,41 @@ html{
     font-family: var(--font-family-explanation);
 }
 
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .section {
-      width: 100%;
-      margin-left: 0;
+        width: auto; 
+        margin-left: auto; 
+        margin-right: auto;
+        margin-bottom: 20px;
     }
-  
-    .button, .button2 {
-      width: 100%;
+    .img3 {
+        width: 80%; 
+        height: auto;
+        margin-left: auto; 
+        margin-right: auto;
     }
-  
-    .img1, .img2 {
-      width: 80px;
-      height: 80px;
-    }
-  }
-  
-  @media only screen and (max-width: 480px) {
+   
+}
+
+@media screen and (max-width: 480px) {
     .section {
-      width: 100%;
-      margin-left: 0;
+        width: auto; 
+        margin-left: 10px;
+        margin-right: 10px;
     }
-  
-    .button, .button2 {
-      width: 100%;
-    }
-  
     .img1, .img2 {
-      width: 60px;
-      height: 60px;
+        height: 80px;
+        width: 80px;
     }
-  }
-  
+    .button {
+        padding: 8px;
+    }
+    .img3 {
+        width: 80%; 
+        height: auto; 
+    }
+    .article {
+        padding: 10px;
+        margin: 10px 0; 
+    }
+}
