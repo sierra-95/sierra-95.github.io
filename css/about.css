@@ -39,19 +39,35 @@ h2{
 }
 
 
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     .section {
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
+      width: 100%;
+      margin-left: 0;
     }
-}
-
-/* Styles for screens up to 480px */
-@media screen and (max-width: 480px) {
+  
+    .img1, .img2 {
+      width: 80px;
+      height: 80px;
+    }
+  
+    .display {
+      flex-direction: column;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
     .section {
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
+      width: 100%;
+      margin-left: 0;
     }
-}
+  
+    .img1, .img2 {
+      width: 60px;
+      height: 60px;
+    }
+  
+    .display {
+      flex-direction: column;
+    }
+  }
+  
