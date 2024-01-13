@@ -1,6 +1,6 @@
 :root{
     --primary-color:#090909;
-    --secondary-color:rgb(38, 106, 106);
+    --secondary-color:rgb(133, 201, 201);
     --foreground-color:#ffffff;
     --font-family-global:Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
     --font-family-explanation:none;
@@ -17,8 +17,9 @@ h2{
     background-color:black;
     color: var(--foreground-color);
     text-align: center;
-    width:90%;
+    width:50%;
     font-family: var(--font-family-global);
+    margin-left: 300px;
 }
 .img1, .img2{
     height:100px;
@@ -28,8 +29,8 @@ h2{
     border-radius: 10px;
 }
 .img3{
-    height:360px;
-    width:360px;
+    height:auto;
+    width:350px;
     border: 2px;
     border-radius: 10px;
 }
@@ -68,3 +69,4 @@ h2{
         width: 100%; 
         height: auto;
     }
+}

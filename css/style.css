@@ -1,7 +1,8 @@
 @import 'normalize.css';
 
 :root {
-  --color-primary:  rgb(38, 106, 106);
+  --color-primary:  rgb(133, 201, 201);
+  --color-secondary:rgb(38, 106, 106);
   --color-black: #090909;
   --color-white: #ffffff;
   --color-light-grey: #f3f3f3;
@@ -35,15 +36,15 @@
   --nav-item-letter-spacing: 0.04rem;
   --nav-item-display: inline-block;
   --nav-item-margin: 0 0 3rem 0;
-  --nav-item-link-hover: var(--color-primary);
+  --nav-item-link-hover: var(--color-secondary);
   --section-tagline-margin: 0;
   --button-display: inline-block;
-  --button-padding: 1.5rem 3rem;
-  --button-border: 0.2rem solid var(--color-primary);
+  --button-padding: 1rem 2rem;
+  --button-border: 0.2rem;
   --button-color:#d5d3d3;
   --button-text-decoration: none;
   --button-font-size: var(--font-size-large);
-  --button-hover-color: var(--color-white);
+  --button-hover-color: var(--color-black);
   --button-hover-text-decoration: none;
   --button-hover-background: var(--color-primary);
   --header-padding: 4rem 0 0;
@@ -101,7 +102,7 @@ body {
   line-height: var(--line-height-base);
   margin:0;
   padding:0;
-  background-color: #090909;
+  background-color: rgb(133, 201, 201);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -130,7 +131,7 @@ a:active {
   display: var(--button-display);
   padding: var(--button-padding);
   border: var(--button-border);
-  border-radius: 10px;
+  border-radius: 5px;
   font-size: var(--button-font-size);
   background-color: var(--button-color);
   text-decoration: var(--button-text-decoration);
@@ -154,6 +155,7 @@ a:active {
 
 .header-logo {
   position: var(--header-logo-position);
+  margin-top: 20px;
 }
 
 .header-logo a {
@@ -263,7 +265,7 @@ a:active {
   margin: var(--section-tagline-margin);
 }
 .section-tagline {
-    color:rgb(38, 106, 106);;
+    color:rgb(133, 201, 201);
     font-family: var(--font-family-title);
     /*text-transform: var(--section-tagline-transform);*/
     font-weight: var(--font-weight-bold);
@@ -300,7 +302,7 @@ a:active {
 .nav .nav-link {
   display: block;
   padding: 0.5rem 1rem;
-  color:#ffffff;
+  color:#090909;
 }
 
 .nav .nav-link:hover {

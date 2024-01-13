@@ -1,6 +1,6 @@
 :root{
     --primary-color:#090909;
-    --secondary-color:rgb(38, 106, 106);
+    --secondary-color:rgb(133, 201, 201);
     --foreground-color:#ffffff;
     --font-family-global:Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
     --font-family-explanation:none;
@@ -24,7 +24,7 @@ html{
 }
 .button{
     background-color: var(--foreground-color);
-    border:2px solid var(--secondary-color);
+    border:2px;
     padding:10px;
     border-radius: 5px;
     text-decoration: none;
