@@ -17,9 +17,9 @@ h2{
     background-color:black;
     color: var(--foreground-color);
     text-align: center;
-    width:50%;
+    width:80%;
     font-family: var(--font-family-global);
-    margin-left: 300px;
+    margin-left: 100px;
 }
 .img1, .img2{
     height:100px;
