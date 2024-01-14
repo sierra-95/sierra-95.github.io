@@ -14,8 +14,9 @@
     background-color:black;
     color: var(--foreground-color);
     text-align: center;
-    width:auto;
+    width:70%;
     font-family: var(--font-family-global);
+    margin-left: 150px;
 }
 .img3{
     height:auto;
@@ -30,6 +31,8 @@
     .section {
       width: auto;
       margin:10px;
+      margin-left: auto;
+      margin-right: auto;
     }
   
     .img3 {
@@ -45,6 +48,8 @@
     .section {
       width: auto;
       margin:10px;
+      margin-left: auto;
+      margin-right: auto;
     }
   
     .img3 {
