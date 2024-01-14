@@ -30,8 +30,8 @@
 @media only screen and (max-width: 768px) {
     .section {
       width: auto;
-      margin-left: auto;
-      margin-right: auto;
+      margin-left: 10px;
+      margin-right: 10px;
     }
   
     .img3 {
