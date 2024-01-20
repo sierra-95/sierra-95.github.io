@@ -144,7 +144,10 @@
         <hr>
         <div class="row">
           <div class="col-1-2">
-            <p class="footer-copyright">© 2023 Michael Machohi</p>
+            <p class="footer-copyright">© <span id="copyright-year">2023</span> Michael Machohi</p>
+            <script>
+              document.getElementById('copyright-year').textContent = new Date().getFullYear();
+            </script>            
           </div>
         </div>
       </div>
