@@ -1,5 +1,5 @@
 :root {
-  --color-primary:  rgb(0, 0, 0);
+  --color-primary:  rgb(133, 201, 201);
   --color-secondary:rgb(38, 106, 106);
   --color-black: #090909;
   --color-white: #ffffff;
@@ -75,8 +75,7 @@ body {
   margin:0;
   padding:0;
   background-color: var(--color-primary);
-  background-image: url('../images/test/leaves-black-blue-drops-4k-wallpaper-3840x2160.jpg');
-  background-size: cover;
+
 }
 
 h1, h2, h3, h4, h5, h6 {

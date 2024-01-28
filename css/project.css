@@ -8,6 +8,10 @@
 html{
     background-color: var(--primary-color);
 }
+body{
+    background-image: url('../images/Backgrounds/leaves-black-blue.jpg');
+    background-size: cover;
+}
 
 .section{
     border:2px;

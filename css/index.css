@@ -15,6 +15,10 @@
     --button-hover-text-decoration: none;
     --button-hover-background: var(--secondary-color);
   }
+  body{
+    background-image: url('../images/Backgrounds/flower.jpg');
+    background-size: cover;
+  }
   .section{
     padding:20px;
     box-sizing: border-box;

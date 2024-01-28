@@ -5,6 +5,10 @@
     --font-family-global:Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
     --font-family-explanation:none;
 }
+body{
+  background-image: url('../images/Backgrounds/leaves-black-blue.jpg');
+  background-size: cover;
+}
 h2{
     color:var(--secondary-color);
 }
