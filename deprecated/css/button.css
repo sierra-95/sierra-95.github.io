@@ -1,0 +1,39 @@
+.hover-menu {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .hover-button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .options {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    padding: 10px;
+    z-index: 1;
+  }
+  
+  .hover-menu:hover .options {
+    display: block;
+  }
+  
+  .options a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    padding: 8px;
+    transition: background-color 0.3s;
+  }
+  
+  .options a:hover {
+    background-color: #ddd;
+  }
+  

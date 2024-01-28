@@ -39,7 +39,7 @@
   --button-display: inline-block;
   --button-padding: 1rem 2rem;
   --button-border: 0.2rem;
-  --button-color: var(--color-black);
+  --button-color:#d5d3d3;
   --button-text-decoration: none;
   --button-font-size: var(--font-size-large);
   --button-hover-color: var(--color-black);
@@ -102,12 +102,11 @@ a:active {
 .button {
   display: var(--button-display);
   padding: var(--button-padding);
-  border: var(--button-border) solid var(--color-primary);
-  border-radius: 2px;
+  border: var(--button-border);
+  border-radius: 5px;
   font-size: var(--button-font-size);
   background-color: var(--button-color);
   text-decoration: var(--button-text-decoration);
-  color:white;
 }
 
 .button:hover {
@@ -197,7 +196,7 @@ a:active {
 .nav .nav-link {
   display: block;
   padding: 0.5rem 1rem;
-  color:#090909;
+  color:black;
 }
 
 .nav .nav-link:hover {
