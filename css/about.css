@@ -40,6 +40,9 @@ h2{
 .hr{
   width:70%;
 }
+.redux{
+  margin-top: 80px;
+}
 
 
 @media only screen and (max-width: 768px) {
@@ -61,6 +64,9 @@ h2{
     .hr{
       width:70%;
     }
+    .redux{
+      margin-top: 0px;
+    }
   }
   
   @media only screen and (max-width: 480px) {
@@ -80,6 +86,9 @@ h2{
     }
     .hr{
       width:70%;
+    }
+    .redux{
+      margin-top: 0px;
     }
   }
   

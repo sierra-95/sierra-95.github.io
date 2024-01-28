@@ -74,6 +74,9 @@ html{
 .index{
     width:70%;
 }
+.redux{
+    margin-top: 80px;
+}
 @media screen and (max-width: 768px) {
     .section {
         width: auto; 
@@ -89,7 +92,10 @@ html{
     }
     .index{
         width:70%;
-    }   
+    }
+    .redux{
+        margin-top: 0px;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -115,5 +121,8 @@ html{
     }
     .index{
         width:70%;
+    }
+    .redux{
+        margin-top: 0px;
     }
 }
