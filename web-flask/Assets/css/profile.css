@@ -1,0 +1,11 @@
+.profile{
+    box-sizing: border-box;
+    width:300px;
+    height: 300px;
+    border: 2px solid blue;
+}
+@media (max-width: 460px) {
+    .profile{
+        width: 370px;
+    }
+}

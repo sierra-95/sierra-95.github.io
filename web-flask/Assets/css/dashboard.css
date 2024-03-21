@@ -1,0 +1,11 @@
+.dashboard{
+    box-sizing: border-box;
+    width:700px;
+    border: 2px solid red;
+    height: 300px;
+}
+@media (max-width: 460px) {
+    .dashboard{
+        width: 370px;
+    }
+}
