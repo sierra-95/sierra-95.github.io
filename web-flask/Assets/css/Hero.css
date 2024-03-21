@@ -5,7 +5,7 @@
     box-sizing: border-box;
     margin:0px;
     width:auto;
-    height: 600px;
+    height: auto;
     padding:20px;
     border: none;
 }
@@ -16,7 +16,6 @@
     border: 2px solid pink;
     border-radius: 5px;
     width:auto;
-    margin: 0 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -47,7 +46,7 @@ ul{
     list-style: none;
 }
 li{
-    border: 2px solid red;
+    border: none;
     border-radius: 5px;
     width: 40px;
     height: 40px;
@@ -58,7 +57,7 @@ li{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: red;
+    background-color: pink;
 }
 a:hover{
     transform: scale(1.1, 1.1);
@@ -66,7 +65,7 @@ a:hover{
 ul:hover > a li:not(:hover){
     filter: blur(10px);
     transform: scale(0.9, 0.9);
-    background-color: blue;
+    background-color: var(--transparent-black);
 }
 .nav-icons{
     width:30px;

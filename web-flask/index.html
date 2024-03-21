@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" viewport-fit="cover">
     <title>Homepage</title>
-    <link rel="icon" type="image/png" href="../static/images/Favicon/Dark.png">
+    <link rel="icon" type="image/png" href="Assets/images/icons/favicon.jpg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" crossorigin="anonymous" />
     <link rel="stylesheet" href="Assets/css/style.css">
     <link rel="stylesheet" href="Assets/css/button.css">
@@ -16,7 +16,28 @@
     <body>
         <div class="Hero-container">
             <div class="profile">
-                <h1>mike</h1>
+                <div class="profile-picture">
+                </div>
+                <div class="profile-info">
+                    <div class="useless-container"></div>
+                    <h1 class="profile-name">John Doe</h1>
+                    <div class="profile-role">
+                        <h1>Software engineer</h1>
+                    </div>
+                    <br>
+                    <div class="profile-icons">
+                        <img class="icons-profile" src="Assets/images/icons/About.me.ico">
+                        <img class="icons-profile" src="Assets/images/icons/About.me.ico">
+                        <img class="icons-profile" src="Assets/images/icons/About.me.ico">
+                        <img class="icons-profile" src="Assets/images/icons/About.me.ico">
+                    </div>
+                    <br>
+                    <div class="profile-contacts">
+                        <h1>Test contact</h1>
+                    </div>
+                    <br>
+                    <a href="#"><button class="button-official">Request CV</button> </a>
+                </div>
             </div>
             <div class="dashboard">
                 <h1>Person</h1>
@@ -87,6 +108,9 @@
                         </div>
                     </div>
                     <p class="footer-copyright">© <span id="copyright-year">2024</span> Michael Machohi</p>
+                    <script>
+                      document.getElementById('copyright-year').textContent = new Date().getFullYear();
+                    </script>
                 </footer>
             </div>
         </section>               

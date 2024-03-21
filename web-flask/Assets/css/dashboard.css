@@ -1,8 +1,10 @@
 .dashboard{
     box-sizing: border-box;
     width:700px;
+    height: 610px;
     border: 2px solid red;
-    height: 300px;
+    border-radius: 5px;
+    background-color: var(--color-jungle);
 }
 @media (max-width: 460px) {
     .dashboard{
