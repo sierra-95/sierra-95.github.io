@@ -43,40 +43,7 @@
     opacity: var(--button-custom-hover-opacity);
 }
 
-/*Hamburger navigation bar */
-.hamburger-menu {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-}
-.bar {
-    width: 25px;
-    height: 3px;
-    background-color: var(--color-white);
-    margin: 3px 0;
-}
 @media (max-width: 460px) {
-    .hamburger-menu {
-        display: flex;
-    }
-    .nav-list {
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        position: absolute;
-        top: 80px;
-        left: 200px;
-        width: auto;
-        height: auto;
-        padding:0 20px;
-        background-color: var(--transparent-black);
-        z-index: 1;
-    }
-    .nav-list.show {
-        display: block;
-    }
 
-    .nav-list li {
-        padding: 10px;
-    }
 }
+

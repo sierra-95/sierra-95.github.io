@@ -13,13 +13,14 @@
     box-sizing: border-box;
     position: relative;
     padding:10px;
-    border: 2px solid pink;
+    border: none;
     border-radius: 5px;
     width:auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     color: var(--color-black);
+    background-color: #f4e8e8;
 
 }
 a{
@@ -52,7 +53,7 @@ li{
     height: 40px;
     padding:20px;
     margin:10px;
-    font-family: var(--font-family-title);
+    font-family: var(--font-family-base);
     font-size: 0.7rem;
     display: flex;
     flex-direction: column;
@@ -70,9 +71,6 @@ ul:hover > a li:not(:hover){
 .nav-icons{
     width:30px;
     height: auto;
-}
-.Logo-hidden{
-    display: none;
 }
 
 /**@media**/
@@ -92,26 +90,33 @@ ul:hover > a li:not(:hover){
 /* Responsive styles for screens up to 460px */
 @media (max-width: 460px) {
     .Hero-container {
-        height: 600px;
         padding: 0px;
         margin: 0px;
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 
     .child-Hero-container {
-        width:370px;
+        width:350px;
         height: auto;
         padding: 20px;
         margin: 0px;
-        background-color: var(--color-black);
-        flex-direction: row;
-        justify-content: space-between;
+        border: none;
+        margin-left: auto;
+        margin-right: auto;
+        margin:10px;
     }
-    .Logo-hidden{
-        display: block;
+    ul{
+        flex-direction: row;
+    }
+    li{
+        margin: 0 20px;
+        width: 60px;
     }
     .nav-icons{
         width: 20px;
+    }
+    .nav-list li {
+        padding: 10px;
     }
 
 }

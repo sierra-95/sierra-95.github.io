@@ -67,6 +67,7 @@
     }
 
     .footer-child-container {
+        display: none;
         flex-direction: row;
         align-items: center;
         width: 100%;
@@ -82,7 +83,7 @@
         flex-direction: column;
     }
     .footer-logo{
-        margin-left: 20px;
+        margin-left: 0px;
         margin-top: 20px;
     }
     .footer-icon svg {
