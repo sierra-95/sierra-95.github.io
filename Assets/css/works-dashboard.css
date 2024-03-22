@@ -1,7 +1,7 @@
 .dashboard{
     box-sizing: border-box;
     width:700px;
-    height: 610px;
+    height: auto;
     padding:20px;
     border: none;
     border-radius: 5px;
@@ -41,12 +41,12 @@
     margin: 10px;
     box-sizing: border-box;
     width:300px;
-    height:150px;
+    height:auto;
     border:none;
     border-radius: 5px;
     display: flex;
     justify-content: space-between;
-    flex-direction: row;
+    flex-direction: column;
     padding:10px;
 }
 .first,.forth{
