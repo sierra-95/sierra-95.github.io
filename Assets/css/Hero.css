@@ -103,7 +103,8 @@ ul:hover > a li:not(:hover){
         border: none;
         margin-left: auto;
         margin-right: auto;
-        margin:10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
     ul{
         flex-direction: row;
