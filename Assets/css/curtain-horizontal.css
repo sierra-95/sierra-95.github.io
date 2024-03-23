@@ -66,7 +66,7 @@
   top: 0;
   width: 50%;
   height: 100vh;
-  bordfer:2px solid #250036;
+  border:1px solid #250036;
   background-color: #250036;
   z-index: 9999;
   transition: width 2s ease;

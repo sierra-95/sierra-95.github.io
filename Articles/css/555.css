@@ -1,0 +1,19 @@
+@import '../../Assets/css/style.css';
+.timer-image{
+    width:500px;
+    height: auto;
+}
+.architecture-image{
+    width: 500px;
+    height:auto;
+}
+@media (max-width: 460px) {
+    .timer-image{
+        width:auto;
+        max-width: 100%;
+    }
+    .architecture-image{
+        width:auto;
+        max-width: 100%;
+    }
+}

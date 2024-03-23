@@ -3,7 +3,7 @@
     <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" viewport-fit="cover">
-    <title>Sensor-logger</title>
+    <title>555-timer</title>
     <link rel="icon" type="image/png" href="../Assets/images/icons/favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" crossorigin="anonymous" />
     <link rel="stylesheet" href="../Assets/css/style.css">
@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="../Assets/css/works-hero.css">
     <link rel="stylesheet" href="../Assets/css/works-profile.css">
     <link rel="stylesheet" href="../Assets/css/footer.css">
-    <link rel="stylesheet" href="css/sensor-logger.css">
-    <link rel="stylesheet" href="css/sensor-logger-dashboard.css">
+    <link rel="stylesheet" href="css/555.css">
+    <link rel="stylesheet" href="css/google-dashboard.css">
     </head>
     <body>
 
@@ -67,78 +67,59 @@
             </div>
             <!--Dashboard Section-->
             <div class="dashboard">
-                <h1 class="dashboard-title">The Sensor-logger <a href="https://github.com/sierra-95/sensor-logger" target="_blank"><span class="dashboard-link">[Check out on github?]</span></a></h1>
-                <img class="sensor-logger-image" src="images/sensor-logger/sensor-logger.png">
-                <section>
-                    <h2>Introduction:</h2>
-                    <p>For a while, data collection has been carried out manually at many stations, leading to a gradual
-                        increase in paperwork compared to previous years. Even today, despite the shift to computerized
-                        data analysis in most stations, data collection still relies on traditional instruments. While this
-                        approach is not inherently wrong, it has limited the potential for automation in these fields, resulting
-                        in a lack of improvement.
+                <h1 class="dashboard-title">The chip that couldn't be fried, the dead arachnid</h1>
+                <img class="timer-image" src="images/555-timer.png">
+                <section>                                       
+                    <p>The 555 timer is a marvel of engineering, a chip that was designed in 1971 by Hans Camezind.
+                        As tiny as it may look, this particular chip has 25 transistors, 2 diodes and 15 resistors in an 8-pin setup.
+                        Its name is derived from its unique arrangement of 3, 5K resistors placed in series. But what can this thing
+                        do?
+                    </p>              
+                    <hr class="hr">
+                    <p>The 555 timer works how you want it to work. It can delay, generate pulse width signals and can also be used
+                        as an oscillator. Let’s dive in to the working mechanism of this IC. The 555 timers can work in three main
+                        modes namely astable where is acts as an oscillator, monostable where it acts as a “one shot” timer and
+                        bistable where it acts a s a flip-flop.                        
                     </p>
+                    <p>Focusing on the astable mode, this IC can generate continuous square wave output and hence be an oscillator.
+                        Of course, when you hear wave and an IC, you wonder, how will I control the frequency or other factors that
+                        are wave-dependent. You can’t have an IC without a circuit, can you? External resistors and capacitors used
+                        in the circuit can be used to adjust frequency by shifting their values. The common frequency used widely is
+                        40-60 hertz. However, you can generate your own using the formula:
+                    </p>
+                    <p>Frequency= 1.44/ ((R1+ 2R2) *C1) </p>
+                    <p>Frequency of output waveform is determined by values of two resistors and a capacitor.</p>
+                    <hr class="hr">
+                    <p>From the formula, we see that it is mandatory to have a capacitor in your IC circuit, here is why</p>
+                    <img class="architecture-image" src="images/555-skeleton.png">
                     <p>
-                        Over time, sensors have been meticulously designed to provide accurate and reliable readings. With
-                        their seamless integration into automation systems, they have become the preferred choice. This
-                        project aims to streamline data collection by utilizing the Internet of Things; specifically, integrating
-                        Internet-connected sensors to automate data collection in the field of statistics and data analysis.
-                        Although currently limited to two sensors (DHT11 and RFID), the project demonstrates the feasibility
-                        of automating data collection.
+                        The image shown is an undetailed skeleton of this IC. Sometimes, you may need to force the 555 timer to
+                        its initial state and reset the oscillator the same way you would opt to restart your phone or laptop.
+                        In astable mode, the 555 timers ‘don’t’ have a reset pin like in the monostable mode. Instead, the flip-flop
+                        can be reset by constantly practicing charging and discharging. This is a capacitor’s specialty.
+                        The flip-flop is the key component in generation of the square waves.
                     </p>
-                    <p>
-                        I took on the responsibility of overall project management, which included system design, sensor
-                        integration, and web development. The goal was to create a user-friendly dashboard enabling users
-                        to view raw or analyzed data in graphical formats. Additionally, users would have the capability to
-                        export collected data for further analysis
+                    <p>Astable mode can be used in the control of servos where pulse width signals need to be sent via a 555 timer.
+                        Forward and backward movement of the servos will be controlled using push buttons. However, behind the 
+                        scenes of the circuit, the 555 timer controls all this with the help of resistors and a capacitor by
+                        setting and ‘resetting’. If a 555 timer generates a wave of 60 hertz via its output pin, the servo receives
+                        a PWM signal of a specific period. A period of 1ms tells the servo “Stay at 0 degrees”. A period of 2ms
+                        tells it to move 180 degrees. You can therefore guess what a period of 1.5ms tells it to do
                     </p>
-                </section>
-                <hr class="hr">
-                <section>
-                    <h2>Architecture:</h2>
-                    <p>The project is outlined in three main phases: data population, data storage, and data projection.</p>
-                    <p> 1. Data Population:
-                        The Atmega32p serves as the central hub for data collection, interfacing with various
-                        sensors like the DHT11 (for temperature and humidity) and RFID sensors (for Unique
-                        Identifier - UID).
-                         The DHT11 sensor provides real-time environmental information;
-                        temperature and humidity levels.
-                        while the RFID sensor captures Unique Identifiers (UIDs) associated with
-                        RFID cards. Data collection is triggered by the RFID.
+                    <hr class="hr">                    
+                    <p>For curious engineers, you may want to meet duty cycle. This guy is the percentage of time that the PWM signal
+                        will be high(on) compared to the total period of the waveform. If you want to control the amount of time
+                        your servos will rotate, you talk to this guy.                        
                     </p>
-                    <p>
-                        2. Data Storage:
-                        Data collected from the sensors is mapped using PySerial to a MySQL database,
-                        where it awaits retrieval and posting for users to access.
-                    </p>
-                    <p>
-                        3. Data Projection:
-                         The project includes a user-friendly web dashboard created using HTML, CSS, and
-                        JavaScript for the front end.
-                        Flask was employed for back-end development due to its simplicity.
-                        Data is visualized and monitored through this interface, offering users a
-                        comprehensive view of sensor-based systems.
-                    </p>
-                    <img class="architecture-image" src="images/sensor-logger/Architecture diagram.png">
-                </section>
-                <hr class="hr">
-                <section>
-                    <h2>Features:</h2>
-                    <p>Users have the abilit instantly access real-time raw data from both humidity and
-                        temperature sensors, providing a quick and direct insight into environmental
-                        conditions.
-                    </p>
-                    <img class="architecture-image" src="images/sensor-logger/humidity.png">
-                    <p>Graphical data can be viewed and analyzed by just clicking a button, no more Excel or manual plotting,
-                       the project does it all for you.
-                    </p>
-                    <img class="architecture-image" src="images/sensor-logger/graph.png">
-                    <p>Only superusers with RFID cards can trigger the system, enabling a tracking system for access control cards and obtain
-                    insights into individuals' clock-in times, fostering enhanced security and accountability.
-                    </p>
-                    <img class="architecture-image" src="images/sensor-logger/RFID.png">
-                    
-                </section>
-                <hr class="hr">             
+                    <p>You can calculate duty cycle using the formula:</p>
+                    <p>Duty cycle = (R1+R2)/(R1+2R2) </p>
+                    <p>Frequency and duty cycle relate in that:</p>
+                    <p>1.44/(C1*frequency) = (R1+R2)/ duty cycle</p>
+                    <hr class="hr">
+                </section>    
+                <p>This is one among many of the applications of astable mode and keep in mind there are other several modes.
+                    I hope you have learnt something new today.
+                </p>                           
             </div>
 
             <!--Header navigation bar-->

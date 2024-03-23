@@ -3,7 +3,7 @@
     <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" viewport-fit="cover">
-    <title>Sensor-logger</title>
+    <title>web infrastructure</title>
     <link rel="icon" type="image/png" href="../Assets/images/icons/favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" crossorigin="anonymous" />
     <link rel="stylesheet" href="../Assets/css/style.css">
@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="../Assets/css/works-hero.css">
     <link rel="stylesheet" href="../Assets/css/works-profile.css">
     <link rel="stylesheet" href="../Assets/css/footer.css">
-    <link rel="stylesheet" href="css/sensor-logger.css">
-    <link rel="stylesheet" href="css/sensor-logger-dashboard.css">
+    <link rel="stylesheet" href="css/web-infrastructure.css">
+    <link rel="stylesheet" href="css/google-dashboard.css">
     </head>
     <body>
 
@@ -67,78 +67,100 @@
             </div>
             <!--Dashboard Section-->
             <div class="dashboard">
-                <h1 class="dashboard-title">The Sensor-logger <a href="https://github.com/sierra-95/sensor-logger" target="_blank"><span class="dashboard-link">[Check out on github?]</span></a></h1>
-                <img class="sensor-logger-image" src="images/sensor-logger/sensor-logger.png">
+                <h1 class="dashboard-title">The beauty of web infrastructure</h1>
+                <img class="web-structure-image" src="images/web-infrastructure.png">
                 <section>
-                    <h2>Introduction:</h2>
-                    <p>For a while, data collection has been carried out manually at many stations, leading to a gradual
-                        increase in paperwork compared to previous years. Even today, despite the shift to computerized
-                        data analysis in most stations, data collection still relies on traditional instruments. While this
-                        approach is not inherently wrong, it has limited the potential for automation in these fields, resulting
-                        in a lack of improvement.
+                    <p>Web infrastructure is one among many of the impeccable designs to exist among mankind. As some say,
+                        engineering is an art, and this is one of the ingenuities that showcases perfection and detailing.</p>                    
+                    <p>The web is built like in empire. Fences (Firewalls) are meant to protect the people (client).
+                        The elected (web servers, databases, application servers) are meant to serve the people.
+                        The supervisors (load balancers) are supposed to distribute work to the ones responsible.
+                        Isn’t this amazing?
+                    </p>                    
+                    <p>This is just but a good enough introduction to show you what we mean by web infrastructure.
+                        But let’s dive deeper into all this:
+                    </p>
+                    <hr class="hr">
+                    <h2>Client</h2>
+                    <p>The client is you, or your browser, your computer, or whatever is trying to access the internet on your behalf.
+                        Computers have an IP address and this helps them to communicate among one another. So, to access the internet,
+                         you normally enter a URL (example google.com) and this corresponds to an IP address of a particular web server.
+                         The web server servers you the web page of google.com and boom! You have all you needed.                        
+                    </p>
+                    <img class="architecture-image" src="images/google-browser.jpg">
+                    <hr class="hr">
+                    <h2>TCP/IP</h2>
+                    <p>TCP means transmission control protocol while IP means internet protocol. This two are used to establish a connection between two hosts so that messages/ packets can be sent back and forth
+                        A host is just like a client, your computer is a localhost.
+                        Take the IP as a postal address. It manages addressing of a message and how the message will travel
+                        Take TCP as the postal address’s car. TCP will be in charge of transporting internet packets, or the message in short.
+                    </p>
+                    <p>If you request for a web page(google.com), the web page is transported from the web server to your browser using TCP.</p>
+                    <hr class="hr">
+                    <h2>Web server</h2>
+                    <p>This is software that delivers web pages. Ever wondered how you type google.com and get a page out of nowhere,
+                        yet its not stored in your computer? Web servers are responsible for fetching web pages from a storage platform
+                        called a database and delivering them to you.
+                        The web server can be both hardware and software. As hardware, it’s the computer that stores web server software
+                        and connects to the internet to exchange data with other devices.                        
+                    </p>
+                    <hr class="hr">
+                    <h2>Database</h2>
+                    <p>Every institution has a filing system where they store their critical data. They ensure it can be easily
+                        accessed at any time. The web as well has its “filing system” called a database. A database is like a digital
+                        filing cabinet that stores and organizes information in a structured way, making it easy to find, retrieve,
+                        and manage data.
+                        Let’s assume an organization that carries out census collects data on names, age and cities people live and 
+                        then posts the results on the web. This data will have to be stored somewhere, won’t it? This is where
+                        database comes in. Here is a sample database (MySQL):
+                    </p>
+                    <img class="architecture-image" src="images/database.png">
+                    <hr class="hr">
+                    <h2>Load balancer</h2>
+                    <p>No one expects a whole company work to be done by one person when there are other employees
+                        available. As data states, 400,000 google searches are conducted every minute. This is a lot of traffic for
+                        our web servers that need to serve web pages to us, and sometimes we can be very impatient.
                     </p>
                     <p>
-                        Over time, sensors have been meticulously designed to provide accurate and reliable readings. With
-                        their seamless integration into automation systems, they have become the preferred choice. This
-                        project aims to streamline data collection by utilizing the Internet of Things; specifically, integrating
-                        Internet-connected sensors to automate data collection in the field of statistics and data analysis.
-                        Although currently limited to two sensors (DHT11 and RFID), the project demonstrates the feasibility
-                        of automating data collection.
+                        Thanks to load balancers, they help distribute traffic to multiple servers.
+                        Some special algorithms like round robin are used to do this.
+                        Let’s assume there are 5 web servers in google and also, lets assume google uses the ‘least connection first scheduling algorithm’. If you request for a web page, google.com, the algorithm will check for the web server with least number of connections, then direct your traffic to it. This ensures the shortest response time to client requests.
+                    </p>
+                    <hr class="hr">
+                    <h2>Firewalls</h2>
+                    <p>As the name states, they are walls, however, the ‘fire’ just shows how serious they are at their 
+                        job. Firewalls are a protective barrier between a private network and an external network, often the
+                        internet. They operate by enforcing rules that allow, limit or block traffic based on pre-defined criteria.
+                    </p>
+                    <hr class="hr">
+                    <h2>HTTP</h2>
+                    <p>So, what is http://google.com ? In full, HTTP is hypertext transfer protocol. It defines how web browsers
+                        and web server communicate to retrieve and display web pages. 
+                        When you type a URL and press enter, a http request is sent to the web servers. It contains information about:
+                        the browser you are using, your OS, the specific page you want and what your browser accepts
+                        (maybe your browser wants text only for example)
+                        The http response from the server will contain: the data being sent, when the data was last modified, how big
+                        the data is and information about the server that served you. This is a sample http response
+                    </p>
+                    <img class="architecture-image" src="images/http.jpg">
+                    <h2>SSL and HTTPS</h2>
+                    <p>SSL means secure socket layer. SSL works with HTTPS which means HTTP secure. When you visit
+                        a website that uses HTTPS, your data exchange is encrypted. This means that anyone who wants to intercept
+                        the exchange must have an encryption key to do this.
                     </p>
                     <p>
-                        I took on the responsibility of overall project management, which included system design, sensor
-                        integration, and web development. The goal was to create a user-friendly dashboard enabling users
-                        to view raw or analyzed data in graphical formats. Additionally, users would have the capability to
-                        export collected data for further analysis
+                        SSL are certificates that are used to verify the authenticity of the website you want to visit. It contains
+                        a public and private key. The private key is stored securely in a web sever while the public key is given to
+                        anyone who needs it.
+                        Your browser comes with some pre-installed list of trusted root SSL certificates. If you connect to the web,
+                        the web server sends its SSL certificate to your browser and it is the browsers duty to cross check that
+                        against it root certificates. If its valid, your browser trusts it. The browser now uses its public key to 
+                        initiate encryption key exchange with the web server. This involves generating a symmetric encryption key
+                        that will be used for secure communication.
                     </p>
+                    <hr class="hr">
                 </section>
-                <hr class="hr">
-                <section>
-                    <h2>Architecture:</h2>
-                    <p>The project is outlined in three main phases: data population, data storage, and data projection.</p>
-                    <p> 1. Data Population:
-                        The Atmega32p serves as the central hub for data collection, interfacing with various
-                        sensors like the DHT11 (for temperature and humidity) and RFID sensors (for Unique
-                        Identifier - UID).
-                         The DHT11 sensor provides real-time environmental information;
-                        temperature and humidity levels.
-                        while the RFID sensor captures Unique Identifiers (UIDs) associated with
-                        RFID cards. Data collection is triggered by the RFID.
-                    </p>
-                    <p>
-                        2. Data Storage:
-                        Data collected from the sensors is mapped using PySerial to a MySQL database,
-                        where it awaits retrieval and posting for users to access.
-                    </p>
-                    <p>
-                        3. Data Projection:
-                         The project includes a user-friendly web dashboard created using HTML, CSS, and
-                        JavaScript for the front end.
-                        Flask was employed for back-end development due to its simplicity.
-                        Data is visualized and monitored through this interface, offering users a
-                        comprehensive view of sensor-based systems.
-                    </p>
-                    <img class="architecture-image" src="images/sensor-logger/Architecture diagram.png">
-                </section>
-                <hr class="hr">
-                <section>
-                    <h2>Features:</h2>
-                    <p>Users have the abilit instantly access real-time raw data from both humidity and
-                        temperature sensors, providing a quick and direct insight into environmental
-                        conditions.
-                    </p>
-                    <img class="architecture-image" src="images/sensor-logger/humidity.png">
-                    <p>Graphical data can be viewed and analyzed by just clicking a button, no more Excel or manual plotting,
-                       the project does it all for you.
-                    </p>
-                    <img class="architecture-image" src="images/sensor-logger/graph.png">
-                    <p>Only superusers with RFID cards can trigger the system, enabling a tracking system for access control cards and obtain
-                    insights into individuals' clock-in times, fostering enhanced security and accountability.
-                    </p>
-                    <img class="architecture-image" src="images/sensor-logger/RFID.png">
-                    
-                </section>
-                <hr class="hr">             
+                <p>Well, hope you learnt something new today!</p>                           
             </div>
 
             <!--Header navigation bar-->
