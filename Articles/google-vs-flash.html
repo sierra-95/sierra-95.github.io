@@ -78,6 +78,7 @@
                         Let’s say you type "google.com" in your web browser's address bar and hit "Enter". All you see is a ‘line’
                         moving to the right and boom, you get most of what you wanted.
                     </p>
+                    <hr class="hr">
                     <p>On hitting enter, a HTTP request is sent to the Google server. However, there is a small problem.
                          Google servers don’t recognize any URL and here is why:</p>
                     <p>Computers communicate or access information from one another using IP addresses.
@@ -99,10 +100,12 @@
                         that translates human-adapted text-based domain names to machine-adapted, numerical-based IPs. The root 
                         server sits on top of the DNS hierarchy and is syntaxed: (letter). root.server.net. for example, a.root.server.net. 
                     </p>
+                    <hr class="hr">
                     <p>Step 2: The resolver requests the root server to find google.com. However, it as well doesn’t know the IP
                         address but knows where to locate the TLD server. TLD servers handle requests for the highest level of
                         domains which include .com, .org, .net                        
                     </p>
+                    <hr class="hr">
                     <p>Step 3: The resolver stores the information it’s fed by the root server. Resolver now goes to the .com TLD
                         server. Unfortunately, it also, can’t provide the IP address but knows authoritative name servers for google.com.
                         The .com TLD server points Resolver to the authoritative name servers. Why?
@@ -112,6 +115,7 @@
                         These servers are normally 4 in number so as to split up tasks and incase one server fails, there is redundancy.
                         To know who are the authoritative name servers for your domain, run a WHOIS query.</p>
                     <img class="architecture-image2" src="images/whois.png">
+                    <hr class="hr">
                     <p>Step 4: Finally, the authoritative name server provides the IP address and the resolver saves this information.
                         The resolver gives the OS the IP address so that it can save it and avoid future querying (repeating this
                         lengthy process again). The IP address is stored at the local cache and not the file /etc/hosts. The local
@@ -120,6 +124,7 @@
                     <p>
                         What’s astonishing is that the whole above process happens within a second. Isn’t that amazing!
                     </p>
+                    <hr class="hr">
                     <p>
                         Step 5: Well, after obtaining the IP address, our device (the client) will establish a TCP connection with
                         the server. Then the browser will compose an HTTP request and that request will be sent to the server.

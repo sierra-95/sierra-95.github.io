@@ -95,13 +95,16 @@
                     <p>
                         The image shown is an undetailed skeleton of this IC. Sometimes, you may need to force the 555 timer to
                         its initial state and reset the oscillator the same way you would opt to restart your phone or laptop.
+                    </p>
+                    <p>
                         In astable mode, the 555 timers ‘don’t’ have a reset pin like in the monostable mode. Instead, the flip-flop
                         can be reset by constantly practicing charging and discharging. This is a capacitor’s specialty.
                         The flip-flop is the key component in generation of the square waves.
                     </p>
                     <p>Astable mode can be used in the control of servos where pulse width signals need to be sent via a 555 timer.
-                        Forward and backward movement of the servos will be controlled using push buttons. However, behind the 
-                        scenes of the circuit, the 555 timer controls all this with the help of resistors and a capacitor by
+                        Forward and backward movement of the servos will be controlled using push buttons.
+                    </p>
+                    <p>However, behind the scenes of the circuit, the 555 timer controls all this with the help of resistors and a capacitor by
                         setting and ‘resetting’. If a 555 timer generates a wave of 60 hertz via its output pin, the servo receives
                         a PWM signal of a specific period. A period of 1ms tells the servo “Stay at 0 degrees”. A period of 2ms
                         tells it to move 180 degrees. You can therefore guess what a period of 1.5ms tells it to do
