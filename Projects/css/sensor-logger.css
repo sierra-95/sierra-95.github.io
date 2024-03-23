@@ -1,0 +1,19 @@
+@import '../../Assets/css/style.css';
+.sensor-logger-image{
+    width:600px;
+    height: auto;
+}
+.architecture-image{
+    width: 500px;
+    height:auto;
+}
+@media (max-width: 460px) {
+    .sensor-logger-image{
+        width:auto;
+        max-width: 100%;
+    }
+    .architecture-image{
+        width:auto;
+        max-width: 100%;
+    }
+}

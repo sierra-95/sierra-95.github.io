@@ -1,3 +1,4 @@
+@import '../../Assets/css/style.css';
 .dashboard{
     box-sizing: border-box;
     width:700px;
@@ -18,7 +19,7 @@
     margin-left: 10px;
 }
 .dashboard-title{
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-family: var(--font-family-base);
 }
 .dashboard-subtitle{
@@ -28,7 +29,7 @@
 .dashboard-link{
     font-size: 0.9rem;
     font-family: var(--font-family-base);
-    color:purple;
+    color: purple;
 }
 .dashboard-content{
     box-sizing: border-box;

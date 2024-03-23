@@ -66,8 +66,8 @@
   top: 0;
   width: 50%;
   height: 100vh;
-  /*background-color: rgb(38, 106, 106);*/
-  background-color: black;
+  bordfer:2px solid #250036;
+  background-color: #250036;
   z-index: 9999;
   transition: width 2s ease;
   overflow: hidden; /* Hides the overflowing dots */
@@ -76,8 +76,8 @@
 .left-curtain {
   left: 0;
   background-image: radial-gradient(
-    circle at 25% 25%,
-    black 100%,
+    circle at 23% 25%,
+    #f5f5f5 100%,
     transparent 12%
   );
 }
@@ -86,7 +86,7 @@
   right: 0;
   background-image: radial-gradient(
     circle at 75% 25%,
-    black 10%,
+    #f5f5f5 100%,
     transparent 12%
   );
 }
