@@ -22,7 +22,7 @@
     font-family: var(--font-family-base);
 }
 .dashboard-subtitle{
-    font-size: 1.5rem;
+    font-size: 0.9rem;
     font-family: var(--font-family-base);
 }
 .dashboard-content{
@@ -56,8 +56,7 @@
     background-color: var(--color-alice-blue);
 }
 
-.dashboard-details:hover{
-    transform: scale(1.1);
+a:hover{
     transition: 0.5s;
 }
 .info-dashboard{
@@ -77,6 +76,26 @@
     height:30px;
     margin-top: 15px;
 }
+
+/*resume*/
+.ul{
+    list-style-type: none;
+    padding: 0;
+}
+.hr{
+    border: none;
+    border-top: 1px solid var(--color-purple);
+    margin: 20px 0;
+}
+.li{
+    width: auto;
+    display: flex;
+    flex-direction: row;
+}
+h2{
+    font-size: 1rem;
+    font-family: var(--font-family-base);
+}
 @media (max-width: 460px) {
     .dashboard{
         width: 350px;
@@ -87,5 +106,14 @@
     }
     .dashboard-control{
         flex-direction: column;
+    }
+    .ul{
+        flex-direction: column;
+    }
+    .li{
+        margin-bottom: 10px;
+    }
+    p{
+        font-size: 0.9rem;
     }
 }

@@ -88,4 +88,7 @@
     .dashboard-control{
         flex-direction: column;
     }
+    .Dash-p{
+        font-size: 0.9rem;
+    }
 }
