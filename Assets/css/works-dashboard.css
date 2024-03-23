@@ -76,12 +76,36 @@ a:hover{
     font-size: 0.8rem;
     font-family: var(--font-family-base);
 }
+.info-description{
+    font-size: 0.75rem;
+    font-family: var(--font-family-base);
+    color:purple;
+}
 .dashboard-icon{
     width:30px;
     height:30px;
     margin-top: 15px;
 }
-
+/*rate stars*/
+.rate-stars{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width:auto;
+    height: auto;
+}
+.rating{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.stars{
+    width:20px;
+}
+.star-value{
+    font-size:1rem;
+}
 /*resume*/
 .ul{
     list-style-type: none;
