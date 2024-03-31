@@ -77,6 +77,23 @@
     height:30px;
     margin-top: 15px;
 }
+@media (max-width: 768px) {
+    .dashboard{
+        width: auto;
+        height: auto;
+        margin:10px;
+
+    }
+    .dashboard-control{
+        flex-direction: column;
+    }
+    .dashboard-details{
+        width: auto;
+    }
+    .Dash-p{
+        font-size: 0.9rem;
+    }
+}
 @media (max-width: 460px) {
     .dashboard{
         width: 350px;

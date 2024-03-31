@@ -78,11 +78,11 @@ ul:hover > a li:not(:hover){
 @media (max-width: 768px) {
     .Hero-container {
         width: auto;
-        padding: 50px;
+        padding: 5px;
     }
 
     .child-Hero-container {
-        width: 90%;
+        width: auto;
     }
 
 }

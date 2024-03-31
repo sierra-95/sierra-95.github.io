@@ -37,25 +37,7 @@
 @media (max-width: 768px) {
     .footer-container {
         padding: 0px;
-    }
-
-    .footer-child-container {
-        flex-direction: row;
-        align-items: center;
-        width: 90%;
-        margin-left: 5%;
-    }
-
-    .footer-icon {
-        margin-bottom: 10px;
-    }
-
-    .footer {
-        flex-direction: column;
-    }
-    .footer-logo{
-        margin-left: 50px;
-        margin-top: 20px;
+        width: auto;
     }
 }
 
