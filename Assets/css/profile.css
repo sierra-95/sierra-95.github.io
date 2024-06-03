@@ -95,25 +95,13 @@
 hr{
     width:80%;
 }
-@media (max-width: 768px) {
+@media (max-width: 1220px) {
     .profile{
         width: auto;
         margin-top:10px;
         margin-bottom: 10px;
-    }
-    .profile-picture{
-        width:150px;
-        height:150px;
-    
     }
     .profile-info{
-        width:auto;
-    }
-}
-@media (max-width: 460px) {
-    .profile{
-        width: auto;
-        margin-top:10px;
-        margin-bottom: 10px;
+        width: 90%;
     }
 }

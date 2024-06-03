@@ -1,19 +1,16 @@
 @import 'style.css';
 .Hero-container{
+    height: auto;
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
     margin:0px;
-    width:auto;
-    height: auto;
     padding:20px;
-    border: none;
 }
 .child-Hero-container{
     box-sizing: border-box;
     position: relative;
     padding:10px;
-    border: none;
     border-radius: 5px;
     width:auto;
     display: flex;
@@ -75,10 +72,14 @@ ul:hover > a li:not(:hover){
 
 /**@media**/
 
-@media (max-width: 768px) {
+@media (max-width: 1220px) {
     .Hero-container {
         width: auto;
         padding: 5px;
+        flex-direction: column-reverse;
+    }
+    ul{
+        flex-direction: row;
     }
 
     .child-Hero-container {
@@ -92,7 +93,7 @@ ul:hover > a li:not(:hover){
     .Hero-container {
         padding: 0px;
         margin: 0px;
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     .child-Hero-container {
