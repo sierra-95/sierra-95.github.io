@@ -1,5 +1,5 @@
+@import 'style.css';
 :root {
-  --color-black: #090909;
   --font-family-title: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
   --font-size-xxx-large: 4rem;
   --font-weight-bold: 700;
@@ -60,24 +60,22 @@
   }
 
 }
-  /* Adding small dots to the curtains */
 .curtain {
   position: fixed;
   top: 0;
   width: 50%;
   height: 100vh;
-  border:1px solid #250036;
-  background-color: #250036;
+  background-color: var(--color-purple);
   z-index: 9999;
   transition: width 2s ease;
-  overflow: hidden; /* Hides the overflowing dots */
+  overflow: hidden;
 }
 
 .left-curtain {
   left: 0;
   background-image: radial-gradient(
     circle at 23% 25%,
-    #f5f5f5 100%,
+    var(--color-purple) 100%,
     transparent 12%
   );
 }
