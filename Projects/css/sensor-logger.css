@@ -1,0 +1,39 @@
+@import '../../Assets/css/style.css';
+.sensor-logger-image{
+    width:600px;
+    height: auto;
+}
+.architecture-image{
+    width: 500px;
+    height:auto;
+}
+.tomorrow-image{
+    width: 50%;
+    height:auto;
+}
+.image-small{
+    width: 40%;
+    height: auto;
+}
+.services-image{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+@media (max-width: 460px) {
+    .sensor-logger-image{
+        width:auto;
+        max-width: 100%;
+    }
+    .architecture-image{
+        width:auto;
+        max-width: 100%;
+    }
+    .tomorrow-image,.image-small{
+        width:auto;
+        max-width: 100%;
+    }
+    .services-image{
+        flex-direction: column;
+    }
+}

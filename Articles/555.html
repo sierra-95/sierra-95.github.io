@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" viewport-fit="cover">
+    <title>555-timer</title>
+    <link rel="icon" type="image/png" href="../Assets/images/icons/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../Assets/css/style.css">
+    <link rel="stylesheet" href="../Assets/css/button.css">
+    <link rel="stylesheet" href="../Assets/css/works-hero.css">
+    <link rel="stylesheet" href="../Assets/css/works-profile.css">
+    <link rel="stylesheet" href="../Assets/css/footer.css">
+    <link rel="stylesheet" href="css/555.css">
+    <link rel="stylesheet" href="css/google-dashboard.css">
+    </head>
+    <body>
+
+        <!--Hero section-->
+        <div class="Hero-container">
+            <!--Profile section-->
+            <div class="profile">
+                <img class="profile-picture" src="../Assets/images/Michael/passport-3.png">
+                <div class="profile-info">
+                    <div class="useless-container"></div>
+                    <h1 class="profile-name">Michael Machohi</h1>
+                    <div class="profile-role">
+                        <h1>Mechatronic and Software engineer</h1>
+                    </div>
+                    <br>
+                    <div class="profile-icons">
+                        <a href="https://github.com/sierra-95" target="_blank"><img class="icons-profile" src="../Assets/images/icons/github.ico"></a>
+                        <a href="https://www.linkedin.com/in/michael-machohi-b05239243/" target="_blank"><img class="icons-profile" src="../Assets/images/icons/linkedin.ico"></a>
+                        <a href="#"><img class="icons-profile" src="../Assets/images/icons/twitter.ico"></a>
+                        <a href="#"><img class="icons-profile" src="../Assets/images/icons/Instagram.ico"></a>
+                    </div>
+                    <br>
+                    <div class="profile-contacts">
+                        <div class="contacts">
+                            <img class="icons-profile" src="../Assets/images/icons/phone-icon.ico">
+                            <div class="contacts-details">
+                                <h1 class="contacts-title">Phone</h1>
+                                <h1 class="contacts-subtitle">+254 701463147</h1>
+                            </div>                            
+                        </div>
+                        <hr>
+                        <a href="mailto:michaelmachohi@gmail.com" onclick="return confirm('Did you mean to send an email?')">
+                            <div class="contacts">
+                                <img class="icons-profile" src="../Assets/images/icons/gmail.ico">
+                                <div class="contacts-details">
+                                    <h1 class="contacts-title">Email</h1>
+                                    <h1 class="contacts-subtitle">michaelmachohi@gmail.com</h1>
+                                </div>                            
+                            </div>
+                        </a>
+                        <hr>
+                        <div class="contacts">
+                            <img class="icons-profile" src="../Assets/images/icons/maps.ico">
+                            <div class="contacts-details">
+                                <h1 class="contacts-title">Location</h1>
+                                <h1 class="contacts-subtitle">Nairobi, Kenya</h1>
+                            </div>                            
+                        </div>
+                    </div>
+                    <br>
+                </div>
+            </div>
+            <!--Dashboard Section-->
+            <div class="dashboard">
+                <h1 class="dashboard-title">The chip that couldn't be fried, the dead arachnid</h1>
+                <img class="timer-image" src="images/555-timer.png">
+                <section>                                       
+                    <p>The 555 timer is a marvel of engineering, a chip that was designed in 1971 by Hans Camezind.
+                        As tiny as it may look, this particular chip has 25 transistors, 2 diodes and 15 resistors in an 8-pin setup.
+                        Its name is derived from its unique arrangement of 3, 5K resistors placed in series. But what can this thing
+                        do?
+                    </p>              
+                    <hr class="hr">
+                    <p>The 555 timer works how you want it to work. It can delay, generate pulse width signals and can also be used
+                        as an oscillator. Let’s dive in to the working mechanism of this IC. The 555 timers can work in three main
+                        modes namely astable where is acts as an oscillator, monostable where it acts as a “one shot” timer and
+                        bistable where it acts a s a flip-flop.                        
+                    </p>
+                    <p>Focusing on the astable mode, this IC can generate continuous square wave output and hence be an oscillator.
+                        Of course, when you hear wave and an IC, you wonder, how will I control the frequency or other factors that
+                        are wave-dependent. You can’t have an IC without a circuit, can you? External resistors and capacitors used
+                        in the circuit can be used to adjust frequency by shifting their values. The common frequency used widely is
+                        40-60 hertz. However, you can generate your own using the formula:
+                    </p>
+                    <p>Frequency= 1.44/ ((R1+ 2R2) *C1) </p>
+                    <p>Frequency of output waveform is determined by values of two resistors and a capacitor.</p>
+                    <hr class="hr">
+                    <p>From the formula, we see that it is mandatory to have a capacitor in your IC circuit, here is why</p>
+                    <img class="architecture-image" src="images/555-skeleton.png">
+                    <p>
+                        The image shown is an undetailed skeleton of this IC. Sometimes, you may need to force the 555 timer to
+                        its initial state and reset the oscillator the same way you would opt to restart your phone or laptop.
+                    </p>
+                    <p>
+                        In astable mode, the 555 timers ‘don’t’ have a reset pin like in the monostable mode. Instead, the flip-flop
+                        can be reset by constantly practicing charging and discharging. This is a capacitor’s specialty.
+                        The flip-flop is the key component in generation of the square waves.
+                    </p>
+                    <p>Astable mode can be used in the control of servos where pulse width signals need to be sent via a 555 timer.
+                        Forward and backward movement of the servos will be controlled using push buttons.
+                    </p>
+                    <p>However, behind the scenes of the circuit, the 555 timer controls all this with the help of resistors and a capacitor by
+                        setting and ‘resetting’. If a 555 timer generates a wave of 60 hertz via its output pin, the servo receives
+                        a PWM signal of a specific period. A period of 1ms tells the servo “Stay at 0 degrees”. A period of 2ms
+                        tells it to move 180 degrees. You can therefore guess what a period of 1.5ms tells it to do
+                    </p>
+                    <hr class="hr">                    
+                    <p>For curious engineers, you may want to meet duty cycle. This guy is the percentage of time that the PWM signal
+                        will be high(on) compared to the total period of the waveform. If you want to control the amount of time
+                        your servos will rotate, you talk to this guy.                        
+                    </p>
+                    <p>You can calculate duty cycle using the formula:</p>
+                    <p>Duty cycle = (R1+R2)/(R1+2R2) </p>
+                    <p>Frequency and duty cycle relate in that:</p>
+                    <p>1.44/(C1*frequency) = (R1+R2)/ duty cycle</p>
+                    <hr class="hr">
+                </section>    
+                <p>This is one among many of the applications of astable mode and keep in mind there are other several modes.
+                    I hope you have learnt something new today.
+                </p>                           
+            </div>
+
+            <!--Header navigation bar-->
+            <header>
+                <div class="child-Hero-container">
+                    <nav id="nav-links" class="hide-links">                        
+                        <div class="hamburger-menu">
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                        </div>                        
+                        <ul class="nav-list">
+                            <a href="../index.html">
+                                <li>                                
+                                    <img class="nav-icons" src="../Assets/images/icons/home.ico">                                
+                                    <h3>Home</h3>
+                                </li>
+                            </a>
+                            <a href="../works.html">
+                                <li>                                
+                                    <img class="nav-icons" src="../Assets/images/icons/Works.ico">                                
+                                    <h3>works</h3>
+                                </li>
+                            </a>                            
+                            <a href="../articles.html">
+                                <li>                                
+                                    <img class="nav-icons" src="../Assets/images/icons/articles.ico">                                 
+                                    <h3>Articles</h3>
+                                </li>
+                            </a>
+                        </ul>
+                    </nav>
+                    <script src="../Assets/js/hamburger-menu.js"></script>
+                </div>
+            </header>
+        </div>
+                      
+        <!--footer-->
+        <section id="footer">
+            <div class="footer-container">
+                <!--footer child-->
+                <footer>
+                    <div class="footer">
+                        <a href="#"><img class="footer-logo" src="../Assets/images/Logo/Logo-purple.png" alt="Logo" width="120px" height="auto"></a>
+                        <div class="footer-child-container">
+                            <a href="#" class="footer-icon">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#fff" width="40px" height="40px">
+                                    <path d="M23.954 4.569a10 10 0 0 1-2.825.775 4.958 4.958 0 0 0 2.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 0 0-8.384 4.482C7.691 8.094 4.066 6.13 1.64 3.161a4.822 4.822 0 0 0-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 0 1-2.228-.616v.061a4.923 4.923 0 0 0 3.946 4.827 4.996 4.996 0 0 1-2.212.085 4.937 4.937 0 0 0 4.604 3.417 9.868 9.868 0 0 1-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 0 0 7.557 2.209c9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63a9.936 9.936 0 0 0 2.46-2.548l-.047-.02z"></path>
+                            </svg>
+                            </a>
+                            <a href="#" class="footer-icon">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#fff" width="40px" height="40px">
+                                    <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913a5.885 5.885 0 0 0 1.384 2.126A5.868 5.868 0 0 0 4.14 23.37c.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558a5.898 5.898 0 0 0 2.126-1.384 5.86 5.86 0 0 0 1.384-2.126c.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913a5.89 5.89 0 0 0-1.384-2.126A5.847 5.847 0 0 0 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227a3.81 3.81 0 0 1-.899 1.382 3.744 3.744 0 0 1-1.38.896c-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421a3.716 3.716 0 0 1-1.379-.899 3.644 3.644 0 0 1-.9-1.38c-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 1 0 0-12.324zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405a1.441 1.441 0 0 1-2.88 0 1.44 1.44 0 0 1 2.88 0z"></path>
+                                </svg>
+                            </a>
+                            <a href="#" class="footer-icon">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#fff" width="40px" height="40px">
+                                    <path d="M23.998 12c0-6.628-5.372-12-11.999-12C5.372 0 0 5.372 0 12c0 5.988 4.388 10.952 10.124 11.852v-8.384H7.078v-3.469h3.046V9.356c0-3.008 1.792-4.669 4.532-4.669 1.313 0 2.686.234 2.686.234v2.953H15.83c-1.49 0-1.955.925-1.955 1.874V12h3.328l-.532 3.469h-2.796v8.384c5.736-.9 10.124-5.864 10.124-11.853z"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="footer-copyright">© <span id="copyright-year">2024</span> Michael Machohi</p>
+                    <script>
+                      document.getElementById('copyright-year').textContent = new Date().getFullYear();
+                    </script>
+                </footer>
+            </div>
+        </section>               
+    </body>
+</html>
