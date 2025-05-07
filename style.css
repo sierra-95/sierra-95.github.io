@@ -1,0 +1,13 @@
+:root{
+    /****Universal****/
+    --color-white:#ffffff;
+    --color-grey:rgb(70, 68, 68);
+    --color-purple:#250036; 
+    /**Child-Universal**/
+    --body-background-color: var(--color-white);
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: var(--body-background-color);
+}

@@ -1,10 +1,9 @@
-@import 'style.css';
 :root {
   --font-family-title: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
   --font-size-xxx-large: 4rem;
   --font-weight-bold: 700;
   --section-title-margin: 0;
-  --section-title-color: var(--color-black);
+  --section-title-color: #000000;
 }
 .section-title2 {
   font-family: var(--font-family-title);
@@ -65,7 +64,7 @@
   top: 0;
   width: 50%;
   height: 100vh;
-  background-color: var(--color-purple);
+  background-color: #250036;
   z-index: 9999;
   transition: width 2s ease;
   overflow: hidden;
@@ -75,7 +74,7 @@
   left: 0;
   background-image: radial-gradient(
     circle at 23% 25%,
-    var(--color-purple) 100%,
+    #250036 100%,
     transparent 12%
   );
 }
